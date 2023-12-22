@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="userVerifyVM" type="com.guruprasadsapplication.app.modules.userverify.data.viewmodel.UserVerifyVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearUserVerify"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ImageView android:gravity="start"
+            android:id="@+id/imageAstronot"
+            android:layout_height="@dimen/_360pxv"
+            android:layout_marginTop="@dimen/_111pxv"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_astronot}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_astronot"/>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtUserVerifiedS"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_51pxh"
+            android:layout_marginStart="@dimen/_52pxh"
+            android:layout_marginTop="@dimen/_67pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{userVerifyVM.userVerifyModel.txtUserVerifiedS}"
+            style="@style/txtWorkSansromansemibold20" tools:text="@string/msg_user_verified_s"/>
+    </LinearLayout>
+</layout>

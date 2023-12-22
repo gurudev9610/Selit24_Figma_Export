@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="loginWithPhoneVM" type="com.guruprasadsapplication.app.modules.loginwithphone.data.viewmodel.LoginWithPhoneVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearLoginwithPhon"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ImageButton
+            android:background="@drawable/rectangle_bg_white_a700_border_black_900_radius_10"
+            android:id="@+id/btnBackbtn"
+            android:layout_height="@dimen/_40pxh"
+            android:layout_marginEnd="@dimen/_22pxh"
+            android:layout_marginStart="@dimen/_22pxh"
+            android:layout_marginTop="@dimen/_24pxv"
+            android:layout_width="@dimen/_40pxh"
+            android:paddingHorizontal="@dimen/_10pxh"
+            android:paddingVertical="@dimen/_10pxv"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_backbtn" tools:ignore="ContentDescription"/>
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtEnteryourmobi"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_24pxv"
+            android:layout_width="match_parent"
+            android:text="@{loginWithPhoneVM.loginWithPhoneModel.txtEnteryourmobi}"
+            style="@style/txtWorkSansromanmedium20" tools:text="@string/msg_enter_your_mobi"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtMobileNumber"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_29pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{loginWithPhoneVM.loginWithPhoneModel.txtMobileNumber}"
+            style="@style/txtWorkSansromanmedium16" tools:text="@string/lbl_mobile_number"/>
+        <EditText
+            android:background="@drawable/rectangle_bg_white_a700_border_blue_a400_radius_4"
+            android:ellipsize="end" android:hint="@string/msg_91_10dig"
+            android:id="@+id/etPrice" android:inputType="phone"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_11pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_8pxh"
+            android:paddingTop="@dimen/_16pxv" android:singleLine="true"
+            android:text="@={loginWithPhoneVM.loginWithPhoneModel.etPriceValue}"
+            android:textColorHint="@color/black_900"
+            style="@style/etSolidRoundedOutline_1" tools:ignore="Autofill"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnSendOtp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_426pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_15pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_15pxv" android:singleLine="true"
+            android:text="@string/lbl_send_otp"
+            android:textAllCaps="false" style="@style/btnSolidRounded_3" tools:text="@string/lbl_send_otp"/>
+    </LinearLayout>
+</layout>

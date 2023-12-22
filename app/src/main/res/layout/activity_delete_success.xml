@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="deleteSuccessVM" type="com.guruprasadsapplication.app.modules.deletesuccess.data.viewmodel.DeleteSuccessVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearDeleteSuccess"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ImageView android:gravity="start"
+            android:id="@+id/imageSuccessfullyDo"
+            android:layout_height="@dimen/_360pxv"
+            android:layout_marginTop="@dimen/_114pxv"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_successfullydo}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_successfullydo"/>
+        <TextView android:id="@+id/txtAccountDeleted"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_98pxh"
+            android:layout_marginStart="@dimen/_98pxh"
+            android:layout_marginTop="@dimen/_48pxv"
+            android:layout_width="wrap_content"
+            android:text="@{deleteSuccessVM.deleteSuccessModel.txtAccountDeleted}"
+            style="@style/txtWorkSansromansemibold20" tools:text="@string/msg_account_deleted"/>
+    </LinearLayout>
+</layout>

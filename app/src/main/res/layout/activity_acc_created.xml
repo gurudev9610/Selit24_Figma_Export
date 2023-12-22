@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="accCreatedVM" type="com.guruprasadsapplication.app.modules.acccreated.data.viewmodel.AccCreatedVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearAccCreated"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ImageView android:gravity="start" android:id="@+id/imageRocket"
+            android:layout_height="@dimen/_360pxv"
+            android:layout_marginTop="@dimen/_138pxv"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY" imageRes="@{@drawable/img_rocket}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rocket"/>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtAccountCreated"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_32pxh"
+            android:layout_marginStart="@dimen/_33pxh"
+            android:layout_marginTop="@dimen/_40pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{accCreatedVM.accCreatedModel.txtAccountCreated}"
+            style="@style/txtWorkSansromansemibold20" tools:text="@string/msg_account_created"/>
+    </LinearLayout>
+</layout>

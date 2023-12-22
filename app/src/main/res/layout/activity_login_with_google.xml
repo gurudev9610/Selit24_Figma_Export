@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="loginWithGoogleVM" type="com.guruprasadsapplication.app.modules.loginwithgoogle.data.viewmodel.LoginWithGoogleVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearLoginwithGoog"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ImageButton
+            android:background="@drawable/rectangle_bg_white_a700_border_black_900_radius_10"
+            android:id="@+id/btnBackbtn"
+            android:layout_height="@dimen/_40pxh"
+            android:layout_marginEnd="@dimen/_22pxh"
+            android:layout_marginStart="@dimen/_22pxh"
+            android:layout_marginTop="@dimen/_24pxv"
+            android:layout_width="@dimen/_40pxh"
+            android:paddingHorizontal="@dimen/_10pxh"
+            android:paddingVertical="@dimen/_10pxv"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_backbtn" tools:ignore="ContentDescription"/>
+        <ImageView android:id="@+id/imageGoogleacc"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_271pxh"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_22pxh"
+            android:layout_marginStart="@dimen/_22pxh"
+            android:layout_marginTop="@dimen/_128pxv"
+            android:layout_width="@dimen/_310pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_10pxh}"
+            imageRes="@{@drawable/img_googleacc}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_googleacc"/>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Sellit 24" android:largeHeap="true"
+        android:name="com.guruprasadsapplication.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.helpsupport.ui.HelpSupportActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.chatsscreenselling.ui.ChatsScreenSellingActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.resetpassword.ui.ResetPasswordActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.myads.ui.MyAdsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.location.ui.LocationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.aboutapplication.ui.AboutApplicationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.loginpage.ui.LoginPageActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.postads.ui.PostAdsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.pswdchangesuccess.ui.PswdChangeSuccessActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.phoneotpverify.ui.PhoneOtpVerifyActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.editprofile.ui.EditProfileActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.resetsuccess.ui.ResetSuccessActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.introscreen.ui.IntroScreenActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.guruprasadsapplication.app.modules.splashscreen.ui.SplashScreenActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.logout.ui.LogoutActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.getphoneotp.ui.GetPhoneOtpActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.locationpermission.ui.LocationPermissionActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.notifications.ui.NotificationsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.homescreencontainer.ui.HomeScreenContainerActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.userverify.ui.UserVerifyActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.loginwithgoogle.ui.LoginWithGoogleActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.wishlist.ui.WishlistActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.accountdelete.ui.AccountDeleteActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.acccreated.ui.AccCreatedActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.privacypolicy.ui.PrivacyPolicyActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.signupwithemail.ui.SignupWithEmailActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.changepassword.ui.ChangePasswordActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.loginwithemail.ui.LoginWithEmailActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.getemailotp.ui.GetEmailOtpActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.forgetpassword.ui.ForgetPasswordActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.loginwithphone.ui.LoginWithPhoneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.postadsone.ui.PostAdsOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.deletesuccess.ui.DeleteSuccessActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.googleaccallow.ui.GoogleAccAllowActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.profileinfochangesuccess.ui.ProfileInfoChangeSuccessActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.accountsettings.ui.AccountSettingsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guruprasadsapplication.app.modules.googlesuccess.ui.GoogleSuccessActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

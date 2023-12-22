@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">guru_prasad_s_application</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+<string name="msg_account_created">Account Created Successfully</string>
+  <string name="lbl_logout">Logout</string>
+  <string name="lbl_no">No</string>
+  <string name="msg_forget_password">Forget Password ?
+ 
+Enter your email to get password reset link</string>
+  <string name="msg_confirm_passwor">Confirm Password</string>
+  <string name="msg_password_change">Password Changed
+Successfully</string>
+  <string name="lbl_wishlist">Wishlist</string>
+  <string name="lbl_selit24">Selit24</string>
+  <string name="msg_enter_old_passw">Enter old password</string>
+  <string name="lbl_resend">Resend</string>
+  <string name="msg_create_a_new_ac">Create a new account with email and password </string>
+  <string name="lbl_reset_password">Reset Password </string>
+  <string name="lbl_home">Home</string>
+  <string name="msg_91_10digit_p">+91 | 10digit phone number</string>
+  <string name="lbl_first_name">First Name</string>
+  <string name="msg_enter_password">Enter password again</string>
+  <string name="lbl_signup">Signup</string>
+  <string name="msg_browse_categori">Browse Categories</string>
+  <string name="msg_are_you_sure_to2">Are you sure to Logout ?</string>
+  <string name="lbl_selit24_user">Selit24 User</string>
+  <string name="msg_link_your_googl">Link your Google Account</string>
+  <string name="msg_enter_your_pass">Enter your Password</string>
+  <string name="lbl_change_password">Change Password</string>
+  <string name="lbl_enter_otp">Enter OTP</string>
+  <string name="lbl_search_here">Search here</string>
+  <string name="msg_enter_your_last">Enter your last name</string>
+  <string name="lbl_chats">Chats</string>
+  <string name="lbl_yes">Yes</string>
+  <string name="msg_about_applicati">About Application</string>
+  <string name="msg_otp_verified_su">OTP Verified Successfully</string>
+  <string name="lbl_notifications">Notifications</string>
+  <string name="lbl_get_started">Get started</string>
+  <string name="msg_account_setting">Account Settings</string>
+  <string name="lbl_location">Location</string>
+  <string name="msg_enter_your_mobi">Enter your mobile number to get OTP</string>
+  <string name="msg_forget_password2">Forget Password ?
+</string>
+  <string name="msg_login_with_your">Login with your email and password </string>
+  <string name="msg_forget_password3">Forget Password ?</string>
+  <string name="lbl_privacy_policy">Privacy Policy</string>
+  <string name="lbl_my_ads">My Ads</string>
+  <string name="lbl_selling">Selling</string>
+  <string name="lbl_help_support">Help &amp; Support</string>
+  <string name="msg_create_new_pass">Create New Password</string>
+  <string name="lbl_submit">Submit</string>
+  <string name="lbl_edit_profile">Edit Profile</string>
+  <string name="lbl_link">Link</string>
+  <string name="lbl_save">Save</string>
+  <string name="msg_use_current_loc2">Use current location
+</string>
+  <string name="msg_login_with_goog">Login with Google</string>
+  <string name="msg_didn_t_receive">Didn\u2019t receive OTP ?</string>
+  <string name="lbl_email">Email</string>
+  <string name="lbl_buying">Buying</string>
+  <string name="msg_user_verified_s">User Verified Successfully</string>
+  <string name="lbl_old_password">Old Password</string>
+  <string name="msg_enter_your_emai2">Enter your email to get password reset link</string>
+  <string name="lbl_last_name">Last Name</string>
+  <string name="msg_don_t_have_acco">"Don't have account !"</string>
+  <string name="msg_enter_your_firs">Enter your first name</string>
+  <string name="lbl_select_category">Select Category</string>
+  <string name="msg_fetching_locati">Fetching location....</string>
+  <string name="msg_login_with_phon">Login with Phone</string>
+  <string name="lbl_login">Login</string>
+  <string name="msg_login_with_emai">Login with Email</string>
+  <string name="msg_google_account">Google account
+Verified Successfully</string>
+  <string name="lbl_create_password">Create Password</string>
+  <string name="msg_continue_to_log">Continue to Login</string>
+  <string name="lbl_send_otp">Send OTP</string>
+  <string name="lbl_mobile_number">Mobile Number</string>
+  <string name="msg_enter_your_emai">Enter your Email</string>
+  <string name="lbl_password">Password</string>
+  <string name="msg_india_s_leading">India\u2019s leading marketplace</string>
+  <string name="lbl_rate_us">Rate us</string>
+  <string name="msg_profile_informa">Profile Information
+Changed Successfully</string>
+  <string name="lbl_delete_account">Delete Account</string>
+  <string name="msg_91_10dig">+91 |     10digit phone number</string>
+  <string name="msg_account_deleted">Account Deleted
+Successfully</string>
+  <string name="msg_enter_new_passw">Enter new password</string>
+  <string name="msg_use_current_loc">Use current location
+Fetching location....</string>
+  <string name="lbl_post_ads">Post Ads</string>
+  <string name="msg_search_city_ar">Search city, area or locality</string>
+  <string name="lbl_account">Account</string>
+  <string name="msg_password_reset">Password Reset Successful</string>
+  <string name="msg_are_you_sure_to">Are you sure to delete your account ?</string>
+<string name="msg_please_enter_valid_pa">Please enter valid password</string>
+<string name="msg_please_enter_valid_email">Please enter valid email</string>
+<string name="msg_please_enter_valid_phone_nu">Please enter valid phone number</string>
+<string name="msg_please_enter_valid_text">Please enter valid text</string>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="getEmailOtpVM" type="com.guruprasadsapplication.app.modules.getemailotp.data.viewmodel.GetEmailOtpVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearGetEmailOTP"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <TextView android:ellipsize="end" android:id="@+id/txtEnterOTP"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_89pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{getEmailOtpVM.getEmailOtpModel.txtEnterOTP}"
+            style="@style/txtWorkSansromanmedium20" tools:text="@string/lbl_enter_otp"/>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearEnterOTP"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_84pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylecornerRadius_1">
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearColumnotpview"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylecornerRadius_1">
+                <com.mukesh.OtpView android:focusableInTouchMode="true"
+                    android:id="@+id/otpViewOtpview"
+                    android:inputType="number"
+                    android:itemBackground="@color/white_A700"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    app:OtpItemCount="6"
+                    app:OtpItemHeight="@dimen/_50pxv"
+                    app:OtpItemSpacing="@dimen/_13pxh"
+                    app:OtpItemWidth="@dimen/_42pxh"
+                    app:OtpLineColor="@color/blue_A400" app:OtpViewType="rectangle"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtDidntreceive"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_73pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{getEmailOtpVM.getEmailOtpModel.txtDidntreceive}"
+            style="@style/txtWorkSansromanregular15" tools:text="@string/msg_didn_t_receive"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtResend"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_31pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{getEmailOtpVM.getEmailOtpModel.txtResend}"
+            style="@style/txtWorkSansromanmedium20_1"
+            textUnderline="true" tools:text="@string/lbl_resend"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnSubmit"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_280pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_15pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_15pxv" android:singleLine="true"
+            android:text="@string/lbl_submit"
+            android:textAllCaps="false" style="@style/btnSolidRounded_3" tools:text="@string/lbl_submit"/>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="privacyPolicyVM" type="com.guruprasadsapplication.app.modules.privacypolicy.data.viewmodel.PrivacyPolicyVM"/>
+    </data>
+    <FrameLayout android:id="@+id/framePrivacyPolicy"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <View android:background="@color/blue_A400"
+            android:id="@+id/viewRectangleTwentyNine"
+            android:layout_gravity="top|start"
+            android:layout_height="@dimen/_50pxv"
+            android:layout_marginBottom="@dimen/_10pxv" android:layout_width="@dimen/_360pxh"/>
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarToolbar"
+            android:layout_gravity="top|start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_5pxv"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowbackbtn"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageButton
+                    android:background="@drawable/rectangle_bg_blue_a400_border_white_a700_radius_10"
+                    android:id="@+id/btnBackbtn"
+                    android:layout_height="@dimen/_40pxh"
+                    android:layout_width="@dimen/_40pxh"
+                    android:paddingHorizontal="@dimen/_10pxh"
+                    android:paddingVertical="@dimen/_10pxv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_vector" tools:ignore="ContentDescription"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtPrivacyPolicy"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_6pxv"
+                    android:layout_marginStart="@dimen/_47pxh"
+                    android:layout_marginTop="@dimen/_7pxv"
+                    android:layout_weight="0.79"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{privacyPolicyVM.privacyPolicyModel.txtPrivacyPolicy}"
+                    style="@style/txtWorkSansromanmedium22_1" tools:text="@string/lbl_privacy_policy"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </FrameLayout>
+</layout>

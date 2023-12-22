@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="introScreenVM" type="com.guruprasadsapplication.app.modules.introscreen.data.viewmodel.IntroScreenVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearIntroScreen"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/imageSellingimage"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_202pxh"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_146pxv"
+            android:layout_width="@dimen/_254pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_sellingimage"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_sellingimage"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtSelitTwentyFour"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_78pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{introScreenVM.introScreenModel.txtSelitTwentyFour}"
+            style="@style/txtWorkSansromanbold30" tools:text="@string/lbl_selit24"/>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtIndiasleading"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_37pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{introScreenVM.introScreenModel.txtIndiasleading}"
+            style="@style/txtWorkSansromanregular16_3" tools:text="@string/msg_india_s_leading"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnGetStarted"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_156pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_15pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_15pxv" android:singleLine="true"
+            android:text="@string/lbl_get_started"
+            android:textAllCaps="false" style="@style/btnSolidRounded_3" tools:text="@string/lbl_get_started"/>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="chatsScreenBuyingVM" type="com.guruprasadsapplication.app.modules.chatsscreenbuying.data.viewmodel.ChatsScreenBuyingVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearChatsScreenBu"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumngroupten"
+            android:layout_height="0dp" android:layout_weight="1.0"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtGroupTen"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_1pxv"
+                android:paddingStart="@dimen/_20pxh"
+                android:paddingTop="@dimen/_17pxv"
+                android:singleLine="true"
+                android:text="@{chatsScreenBuyingVM.chatsScreenBuyingModel.txtGroupTen}"
+                style="@style/txtSolid" tools:text="@string/lbl_selit24"/>
+            <LinearLayout android:id="@+id/linearRowbuying"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtBuying"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_11pxv"
+                    android:layout_marginStart="@dimen/_66pxh"
+                    android:layout_marginTop="@dimen/_11pxv"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{chatsScreenBuyingVM.chatsScreenBuyingModel.txtBuying}"
+                    style="@style/txtWorkSansromanmedium14" tools:text="@string/lbl_buying"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtSelling"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_11pxv"
+                    android:layout_marginEnd="@dimen/_67pxh"
+                    android:layout_marginStart="@dimen/_133pxh"
+                    android:layout_marginTop="@dimen/_11pxv"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{chatsScreenBuyingVM.chatsScreenBuyingModel.txtSelling}"
+                    style="@style/txtWorkSansromanregular14" tools:text="@string/lbl_selling"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

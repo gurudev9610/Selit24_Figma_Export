@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="logoutVM" type="com.guruprasadsapplication.app.modules.logout.data.viewmodel.LogoutVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameLogout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700_7f">
+        <View
+            android:background="@drawable/rectangle_bg_white_a700_radius_10"
+            android:id="@+id/viewRectangleSeventeen"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_200pxv"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_25pxh"
+            android:layout_marginStart="@dimen/_25pxh"
+            android:layout_marginTop="@dimen/_40pxv" android:layout_width="@dimen/_310pxh"/>
+        <LinearLayout android:id="@+id/linearColumnconfirmation"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_40pxh"
+            android:layout_marginVertical="@dimen/_40pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtConfirmation"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{logoutVM.logoutModel.txtConfirmation}"
+                style="@style/txtWorkSansromanmedium22" tools:text="@string/msg_are_you_sure_to2"/>
+            <LinearLayout android:id="@+id/linearRowno"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_13pxh"
+                android:layout_marginStart="@dimen/_13pxh"
+                android:layout_marginTop="@dimen/_52pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnNo"
+                    android:layout_height="@dimen/_44pxv"
+                    android:layout_width="@dimen/_100pxh"
+                    android:paddingBottom="@dimen/_11pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_11pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_no"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded_4" tools:text="@string/lbl_no"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnYes"
+                    android:layout_height="@dimen/_44pxv"
+                    android:layout_marginStart="@dimen/_40pxh"
+                    android:layout_width="@dimen/_100pxh"
+                    android:paddingBottom="@dimen/_11pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_11pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_yes"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded_5" tools:text="@string/lbl_yes"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

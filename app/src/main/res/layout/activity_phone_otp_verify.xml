@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="phoneOtpVerifyVM" type="com.guruprasadsapplication.app.modules.phoneotpverify.data.viewmodel.PhoneOtpVerifyVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearPhoneOTPverif"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ImageView android:gravity="start"
+            android:id="@+id/imageSuccessfullyDo"
+            android:layout_height="@dimen/_360pxv"
+            android:layout_marginTop="@dimen/_186pxv"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_successfullydo}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_successfullydo"/>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtOTPVerifiedSu"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_54pxh"
+            android:layout_marginStart="@dimen/_54pxh"
+            android:layout_marginTop="@dimen/_67pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{phoneOtpVerifyVM.phoneOtpVerifyModel.txtOTPVerifiedSu}"
+            style="@style/txtWorkSansromansemibold20" tools:text="@string/msg_otp_verified_su"/>
+    </LinearLayout>
+</layout>

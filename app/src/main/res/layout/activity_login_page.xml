@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="loginPageVM" type="com.guruprasadsapplication.app.modules.loginpage.data.viewmodel.LoginPageVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearLoginPage"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/imageLoginimage"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_219pxh"
+            android:layout_marginEnd="@dimen/_55pxh"
+            android:layout_marginStart="@dimen/_55pxh"
+            android:layout_marginTop="@dimen/_97pxv"
+            android:layout_width="@dimen/_249pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_loginimage"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_loginimage"/>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnholdingsmartph"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_73pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStyleblue_2">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearPhone"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_30pxh"
+                android:layout_marginStart="@dimen/_30pxh"
+                android:layout_marginTop="@dimen/_28pxv"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylewhite_A700cornerRadius">
+                <ImageView android:id="@+id/imageHoldingSmartph"
+                    android:layout_height="@dimen/_46pxh"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:layout_marginStart="@dimen/_1pxh"
+                    android:layout_marginTop="@dimen/_2pxv"
+                    android:layout_width="@dimen/_50pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_holdingsmartph"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_holdingsmartph"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtLoginwithPhon"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_15pxv"
+                    android:layout_marginEnd="@dimen/_90pxh"
+                    android:layout_marginStart="@dimen/_40pxh"
+                    android:layout_marginTop="@dimen/_17pxv"
+                    android:layout_weight="0.7"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{loginPageVM.loginPageModel.txtLoginwithPhon}"
+                    style="@style/txtWorkSansromanmedium14_1" tools:text="@string/msg_login_with_phon"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearEmail"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_30pxh"
+                android:layout_marginStart="@dimen/_30pxh"
+                android:layout_marginTop="@dimen/_28pxv"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylewhite_A700cornerRadius">
+                <ImageView android:id="@+id/imageMail"
+                    android:layout_height="@dimen/_38pxh"
+                    android:layout_marginBottom="@dimen/_6pxv"
+                    android:layout_marginStart="@dimen/_7pxh"
+                    android:layout_marginTop="@dimen/_6pxv"
+                    android:layout_width="@dimen/_38pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_mail"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_mail"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtLoginwithEmai"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_15pxv"
+                    android:layout_marginEnd="@dimen/_92pxh"
+                    android:layout_marginStart="@dimen/_48pxh"
+                    android:layout_marginTop="@dimen/_17pxv"
+                    android:layout_weight="0.75"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{loginPageVM.loginPageModel.txtLoginwithEmai}"
+                    style="@style/txtWorkSansromanmedium14_1" tools:text="@string/msg_login_with_emai"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearGoogle"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_176pxv"
+                android:layout_marginEnd="@dimen/_30pxh"
+                android:layout_marginStart="@dimen/_30pxh"
+                android:layout_marginTop="@dimen/_28pxv"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylewhite_A700cornerRadius">
+                <ImageView android:id="@+id/imageGoogle"
+                    android:layout_height="@dimen/_38pxh"
+                    android:layout_marginBottom="@dimen/_6pxv"
+                    android:layout_marginStart="@dimen/_7pxh"
+                    android:layout_marginTop="@dimen/_6pxv"
+                    android:layout_width="@dimen/_38pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_google_38x38"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_google_38x38"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtLoginwithGoog"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_15pxv"
+                    android:layout_marginEnd="@dimen/_88pxh"
+                    android:layout_marginStart="@dimen/_44pxh"
+                    android:layout_marginTop="@dimen/_17pxv"
+                    android:layout_weight="0.76"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{loginPageVM.loginPageModel.txtLoginwithGoog}"
+                    style="@style/txtWorkSansromanmedium14_1" tools:text="@string/msg_login_with_goog"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

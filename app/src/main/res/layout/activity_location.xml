@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="locationVM" type="com.guruprasadsapplication.app.modules.location.data.viewmodel.LocationVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearLocation"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar android:gravity="start"
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:id="@+id/linearRowlocation"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStyleblue_A400">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtLocation"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_4pxv"
+                    android:layout_marginStart="@dimen/_20pxh"
+                    android:layout_marginTop="@dimen/_16pxv"
+                    android:layout_weight="0.84"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{locationVM.locationModel.txtLocation}"
+                    style="@style/txtWorkSansromansemibold24" tools:text="@string/lbl_location"/>
+                <ImageView android:id="@+id/imageVector"
+                    android:layout_height="@dimen/_20pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_20pxh"
+                    android:layout_marginStart="@dimen/_197pxh"
+                    android:layout_marginTop="@dimen/_20pxv"
+                    android:layout_width="@dimen/_20pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_vector_white_a700_20x20"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_vector_white_a700_20x20"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <androidx.appcompat.widget.SearchView
+            android:background="@drawable/rectangle_bg_gray_100_border_black_900_radius_4"
+            android:gravity="center_horizontal"
+            android:id="@+id/searchViewGroupTwentyTwo"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_34pxv"
+            android:layout_width="match_parent"
+            android:theme="@style/searchViewGroupTwentyTwo"
+            app:iconifiedByDefault="false"
+            app:queryBackground="@android:color/transparent"
+            app:queryHint="@string/msg_search_city_ar" app:searchIcon="@drawable/img_search"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearRowvectorOne"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_width="wrap_content" android:orientation="horizontal">
+            <ImageView android:id="@+id/imageVectorOne"
+                android:layout_height="@dimen/_28pxh"
+                android:layout_marginBottom="@dimen/_9pxv"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="@dimen/_28pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_vector_blue_a400_28x28"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_vector_blue_a400_28x28"/>
+            <TextView android:id="@+id/txtUsecurrentloc"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_14pxh"
+                android:layout_weight="0.85" android:layout_width="0dp"
+                android:text="@{locationVM.locationModel.txtUsecurrentloc}"
+                style="@style/txtWorkSansromanmedium16" tools:text="@string/msg_use_current_loc"/>
+        </LinearLayout>
+        <View android:background="@color/black_900"
+            android:id="@+id/lineLineOne"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_1pxv"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_2pxv" android:layout_width="@dimen/_320pxh"/>
+        <ImageView android:id="@+id/imageIMG2023120817"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_549pxh"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_7pxh"
+            android:layout_marginStart="@dimen/_7pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_width="@dimen/_346pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_img2023120817}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_img2023120817"/>
+    </LinearLayout>
+</layout>

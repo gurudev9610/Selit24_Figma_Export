@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="resetSuccessVM" type="com.guruprasadsapplication.app.modules.resetsuccess.data.viewmodel.ResetSuccessVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearResetSuccess"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ImageView android:gravity="start"
+            android:id="@+id/imageSuccessfullyDo"
+            android:layout_height="@dimen/_360pxv"
+            android:layout_marginTop="@dimen/_114pxv"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_successfullydo}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_successfullydo"/>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtPasswordReset"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_48pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{resetSuccessVM.resetSuccessModel.txtPasswordReset}"
+            style="@style/txtWorkSansromansemibold20" tools:text="@string/msg_password_reset"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnContinueToLoginOne"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_130pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_18pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_18pxv" android:singleLine="true"
+            android:text="@string/msg_continue_to_log"
+            android:textAllCaps="false" style="@style/btnSolidRounded_2" tools:text="@string/msg_continue_to_log"/>
+    </LinearLayout>
+</layout>

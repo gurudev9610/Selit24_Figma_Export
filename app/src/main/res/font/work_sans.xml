@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><font-family xmlns:app="http://schemas.android.com/apk/res-auto">
+    <font app:font="@font/worksansromanbold" app:fontWeight="700"/>
+    <font app:font="@font/worksansromansemibold" app:fontWeight="600"/>
+    <font app:font="@font/worksansromanmedium" app:fontWeight="500"/>
+    <font app:font="@font/worksansromanregular" app:fontWeight="400"/>
+    <font app:font="@font/worksansromanlight" app:fontWeight="300"/>
+</font-family>

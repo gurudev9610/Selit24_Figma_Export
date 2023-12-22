@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="myAdsVM" type="com.guruprasadsapplication.app.modules.myads.data.viewmodel.MyAdsVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearMyAds"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <TextView android:ellipsize="end" android:gravity="start"
+            android:id="@+id/txtGroupEight"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_1pxv"
+            android:paddingStart="@dimen/_20pxh"
+            android:paddingTop="@dimen/_17pxv" android:singleLine="true"
+            android:text="@{myAdsVM.myAdsModel.txtGroupEight}"
+            style="@style/txtSolid" tools:text="@string/lbl_selit24"/>
+    </LinearLayout>
+</layout>
